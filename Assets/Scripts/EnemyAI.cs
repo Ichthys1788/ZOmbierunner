@@ -25,7 +25,6 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         DistancetoTarget = Vector3.Distance(player.position, transform.position);
-        Debug.Log(DistancetoTarget);
         if(DistancetoTarget <= Radius)
         {
             provoked = true;
@@ -50,13 +49,11 @@ public class EnemyAI : MonoBehaviour
     {
         if (DistancetoTarget >= myNavMeshAgent.stoppingDistance)
         {
-            Debug.Log("SDFSFDSF1");
 
             ChaseTarget();
         }
         if (DistancetoTarget <= myNavMeshAgent.stoppingDistance)
         {
-            Debug.Log("SDFSFDSF2");
             AttackTarget();
         }
     }
@@ -68,13 +65,11 @@ public class EnemyAI : MonoBehaviour
         }
     void AttackTarget()
         {
-            Debug.Log("sdfssdf");
         }
 
     void Revert()
         { 
             myNavMeshAgent.SetDestination(firstpos);
-            Debug.Log("SDFSFDSF");
         }
 
     void OnDrawGizmosSelected()
