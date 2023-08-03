@@ -138,9 +138,10 @@ GameObject:
   - component: {fileID: 289249638}
   - component: {fileID: 289249637}
   - component: {fileID: 289249643}
+  - component: {fileID: 289249644}
   m_Layer: 0
   m_Name: S.E
-  m_TagString: Untagged
+  m_TagString: B.E
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,6 +368,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &289249644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289249636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be4517b5e0714a499d91346c6c132ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 122
 --- !u!1 &291317954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,7 +1606,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 291317956}
   - {fileID: 1259191207}
-  - {fileID: 1699141421}
   - {fileID: 289249642}
+  - {fileID: 1699141421}
   - {fileID: 327246069}
   - {fileID: 1218790174}
